@@ -1,0 +1,98 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cinephile</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="logotipo">CINEPHILE</h2>
+            <nav>
+                <a href="index.html" onclick="quitarFiltro(); limpiarBusqueda();" class="activo">Home</a>
+                <a href="#" onclick="aplicarFiltroPeliculas(); limpiarBusqueda();">Películas</a>
+                <a href="#" onclick="aplicarFiltroSeries(); limpiarBusqueda();">Series</a>
+                <a href="pages/Vista_perfil.html">Perfil</a>
+                <a href="pages/Login.html" >Cerrar Sesión</a>
+
+            </nav>
+        </div>
+    </header>
+    
+    
+
+    <div class="search-container">
+        <input id="search-bar" type="search" onkeyup="buscar()"  onfocusout="mostrarFiltros()" placeholder="¿Qué estás buscando?">
+    </div>
+
+    <div class="container-filtros">
+        <div class="div-selector1">
+            <form method="post" action="/send/" class="filtros-1">
+                <select onchange="aplicarFiltro()" name="formato" id="formato">
+                    <option value="Todos">Todos los formatos</option>
+                    <option value="Pelicula">Pelicula</option>
+                    <option value="Serie">Serie</option>
+                </select>
+            </form>
+        </div>
+    
+        <div class="div-selector2">
+            <form method="post" action="/send/" class="filtros-2">
+                <select onchange="aplicarFiltro()" name="genero" id="genero">
+                    <option value="Todos">Todos los géneros</option>
+                    <option value="Accion">Acción</option>
+                    <option value="Infantil">Infantil</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Suspenso">Suspenso</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasia">Fantasia</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+    <div class="contenedor-general">
+        <div class="grid-container" id="contenido">
+
+            <a href="../tp_web_final_2/pages/DetallePeliculas.html">
+                <div class="pelicula-principal">
+                    <img src="../tp_web_final_2/assets/images/movies-principal/Prisoners-peli.jpg" alt="" class="img">
+                </div>
+            </a>
+            <div class="pelicula-principal">
+                <img src="../tp_web_final_2/assets/images/movies-principal/openheimer_16x9_spa.jpg" alt="" class="img">
+            </div>
+            <div class="pelicula-principal">
+                <img src="../tp_web_final_2/assets/images/movies-principal/wonka_16x9.jpg" alt="" class="img">
+            </div>
+            <div class="pelicula-principal">
+                <img src="../tp_web_final_2/assets/images/movies-principal/the_regime_16x9_spa.jpg" alt="" class="img">
+            </div>
+            <a href="../tp_web_final_2/pages/DetalleSeries.html">
+                <div class="pelicula-principal">
+                    <img src="../tp_web_final_2/assets/images/movies-principal/Breaking-Bad-serie.jpg" alt="" class="img">
+                </div>
+            </a>
+            <div class="pelicula-principal">
+                <img src="../tp_web_final_2/assets/images/movies-principal/x-men-apocalypse-banner-poster-wallpaper-preview.jpg" alt="" class="img">
+            </div>
+            <div class="pelicula-principal">
+                <img src="../tp_web_final_2/assets/images/movies-principal/lorax.jpg" alt="" class="img">
+            </div>
+            <div class="pelicula-principal">
+                <img src="../tp_web_final_2/assets/images/movies-principal/p17843098_v_h8_as.jpg" alt="" class="img">
+            </div>
+        </div>
+    </div>
+
+    <script src="../tp_web_final_2/scripts/scriptPaginaPrincipal.js"></script>
+
+</body>
+</html>
