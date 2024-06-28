@@ -2,7 +2,7 @@
 Trabajo práctico grupal de plataforma de streaming de series y películas del grupo 10.
 
 
-##Integrantes
+## Integrantes
 
 - Santiago Debole.
 - Facundo Caruso.
