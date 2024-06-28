@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinephile</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <head>
+        ...
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        ...
+    </head>
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h2 class="logotipo">CINEPHILE</h2>
+            <nav>
+                <a href="../index.html"  class="activo">Home</a>
+                <a href="../pages/Vista_perfil.html">Perfil</a>
+                <a href="../pages/Login.html" >Cerrar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="detalle-serie" id="detalle-serie">
+            <div class="imagen-serie">
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/mXd1zTwcQ18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="detalles" id="detalles-serie">
+                <h2 style="color: #e50914;" id="titulo-serie">Breaking Bad <span style="color: lightgray;">(2008-2013) </span></h2> 
+
+            <div style="margin-top: 10px;">
+            
+            
+            <strong style="color: lightgray; font-weight: bold;">Temporada</strong>
+                <select id="temporada" name="temporada" style="margin-left: 10px;">
+                    <option value="temporada1">Temporada 1</option>
+                    <option value="temporada2">Temporada 2</option>
+                    <option value="temporada3">Temporada 3</option>
+                    <option value="temporada3">Temporada 4</option>
+                    <option value="temporada3">Temporada 5</option>
+                
+                </select>
+            </div>
+
+        <div style="margin-top: 10px;">
+            <strong style="color: lightgray; font-weight: bold; margin-bottom: 65px;">Capítulo</strong>
+            <select id="capitulo" name="capitulo" style="margin-left: 34px;">
+                <option value="capitulo1">Capítulo 1</option>
+                <option value="capitulo2">Capítulo 2</option>
+                <option value="capitulo3">Capítulo 3</option>
+                <option value="capitulo1">Capítulo 4</option>
+                <option value="capitulo2">Capítulo 5</option>
+                <option value="capitulo3">Capítulo 6</option>
+                <option value="capitulo3">Capítulo 7</option>
+                <option value="capitulo3">Capítulo 8</option>
+                
+                
+            </select>
+        </div>
+                
+                
+                <p><strong style="margin-top: 10px;">Género</strong> Drama, Thriller, Crimen.</p>
+                <p><strong>Actores</strong> <a href="https://es.wikipedia.org/wiki/Bryan_Cranston" target="_blank">Bryan Cranston</a>, <a href="https://es.wikipedia.org/wiki/Aaron_Paul" target="_blank">Aaron Paul </a>, <a href="https://es.wikipedia.org/wiki/Anna_Gunn" target="_blank">Anna Gunn</a>, <a href="https://es.wikipedia.org/wiki/Dean_Norris" target="_blank">Dean Norris.</a></p>
+                <p><strong style="margin-top: 10px;">Resumen:</strong> "Breaking Bad" sigue la transformación de Walter White, un profesor de química de secundaria que se convierte en un fabricante de metanfetaminas después de ser diagnosticado con cáncer. Con la ayuda de su ex alumno y delincuente Jesse Pinkman, Walter ingresa al mundo del crimen.</p>
+                <button onclick="window.open('https://www.youtube.com/watch?v=njtfNPB-YKg')">Ver Serie</button>
+
+                
+            
+            </div>
+        </section>
+        
+        <section class="series-similares">
+            <h2>Series Similares</h2>
+            <div class="series-lista">
+                <div class="serie" id="serie-1">
+                    <img src="../assets/images/Series/Similares 1.jpg" alt="imagen serie similar 1">
+                </div>
+                <div class="serie" id="serie-2">
+                    <img src="../assets/images/Series/Similares 2.jpg" alt="imagen serie similar 2">
+                </div>
+                <div class="serie" id="serie-3">
+                    <img src="../assets/images/Series/Similares 3.jpg" alt="imagen serie similar 3">
+                </div>
+                <div class="serie" id="serie-4">
+                    <img src="../assets/images/Series/Similares 4.jpg" alt="imagen serie similar 4">
+                </div>
+                <div class="serie" id="serie-5">
+                    <img src="../assets/images/Series/Similares 5.jpeg" alt="imagen serie similar 5">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Seguinos en</p>
+        <ul class="redes-sociales">
+            <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://x.com/home" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+        </ul>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../scripts/scriptSeries.js"></script>    
+
+
+
+
+</body>
+</html>

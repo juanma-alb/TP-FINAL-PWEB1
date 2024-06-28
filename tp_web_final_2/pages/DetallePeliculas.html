@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinephile</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h2 class="logotipo">CINEPHILE</h2>
+        <nav>
+            <nav>
+                <a href="../index.html"  class="activo">Home</a>
+                <a href="../pages/Vista_perfil.html">Perfil</a>
+                <a href="../pages/Login.html" >Cerrar Sesión</a>
+            </nav>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="detalle-pelicula" id="detalle-pelicula">
+        <div class="imagen-pelicula">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bpXfcTF6iVk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="detalles" id="detalles-pelicula">
+            <h1 style="color: #e50914;" id="titulo-serie">Prisioneros <span style="color: lightgray;">(2013)</span></h1>
+            <p><strong style="margin-top: 10px;">Duración</strong> 153 minutos.</p>
+            <p><strong>Género</strong> Thriller psicológico, Suspenso.</p>
+            <p><strong>Actores</strong> <a href="https://es.wikipedia.org/wiki/Hugh_Jackman" target="_blank">Hugh Jackman</a>, <a href="https://es.wikipedia.org/wiki/Jake_Gyllenhaal" target="_blank">Jake Gyllenhaal</a>, <a href="https://es.wikipedia.org/wiki/Viola_Davis" target="_blank">Viola Davis</a></p>
+            <p><strong style="margin-top: 10px;">Resumen:</strong> En "Prisioneros", Keller Dover (Hugh Jackman) se enfrenta a la peor pesadilla de un padre cuando su hija de seis años y su amiga desaparecen mientras juegan afuera durante el Día de Acción de Gracias. Con el tiempo en su contra y con la ayuda del detective Loki, Dover decide tomar la justicia por sus propias manos.</p>
+            <button onclick="window.open('https://www.youtube.com/watch?v=KbkDi7z6anE')">Ver Película</button>
+        </div>
+    </section>
+
+    <section class="peliculas-similares">
+        <h2>Películas Similares</h2>
+        <div class="peliculas-lista">
+            <div class="pelicula" id="pelicula-1">
+                <img src="../assets/images/Peliculas/Similares 1.jpg" alt="imagen peli similar 1">
+            </div>
+            <div class="pelicula" id="pelicula-2">
+                <img src="../assets/images/Peliculas/Similares 2.jpg" alt="imagen peli similar 2">
+            </div>
+            <div class="pelicula" id="pelicula-3">
+                <img src="../assets/images/Peliculas/Similares 3.jpg" alt="imagen peli similar 3">
+            </div>
+            <div class="pelicula" id="pelicula-4">
+                <img src="../assets/images/Peliculas/Similares 4.jpg" alt="imagen peli similar 4">
+            </div>
+            <div class="pelicula" id="pelicula-5">
+                <img src="../assets/images/Peliculas/Similares 5.jpg" alt="imagen peli similar 5">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Seguinos en</p>
+    <ul class="redes-sociales">
+        <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://x.com/home" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+    </ul>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="../scripts/scriptPeliculas.js"></script>
+
+</body>
+</html>
+

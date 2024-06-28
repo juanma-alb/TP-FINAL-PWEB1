@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinephile</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="../scripts/scriptRegistro.js"></script>
+</head>
+<body>
+    <div class="wrapper-registro">
+        <div class="container-registro">
+            <form method="post">
+                <h1>Registrarse</h1>
+                <div class="input-box">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" oninput="soloLetras(this)">
+                </div>
+                <div class="input-box">
+                    <label for="apellido"></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" oninput="soloLetras(this)">
+                </div>
+                <div class="input-box">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su email" oninput="validarEmail(this)">
+                    <span id="email-error" style="color: red; display: none;">Email inválido</span>
+                </div>
+                <div class="input-box">
+                    <label for="nombre_usuario"></label>
+                    <input type="text" id="usuario" name="nombre_usuario" placeholder="Ingrese su usuario" oninput="verificarFormulario()">
+                </div>
+                <div class="input-box">
+                    <label for="contraseña"></label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" oninput="validarContraseña(this)">
+                    <span id="contraseña-error" style="color: red; display: none;">La contraseña debe tener 8 caracteres, incluidos mínimo 2 letras, 2 números y 2 caracteres especiales</span>
+                </div>
+                <div class="input-box">
+                    <label for="confirmar_contraseña"></label>
+                    <input type="password" id="confirmar_contraseña" name="confirmar_contraseña"
+                        placeholder="Confirme su contraseña" oninput="contraseñasIguales()">
+                    <span id="confirmar-contraseña-error" style="color: red; display: none;">Las contraseñas no coinciden</span>                        
+                </div>
+                <div class="botones-3">
+                    <button type="submit" id="aceptar-btn" disabled>Aceptar</button>
+                    <a href="Login.html" class="link-inicio-can">Cancelar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

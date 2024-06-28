@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinephile</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logotipo">CINEPHILE</h2>
+            <nav>
+                <a href="../index.html" onclick="quitarFiltro()">Home</a>
+                <a href="#" class="activo">Perfil</a>
+                <a href="../pages/Login.html" >Cerrar Sesión</a>
+            </nav>
+        </div>
+    </header>
+    <div class="wrapper-general">
+        <div class="wrapper-1">
+            <div class="foto">
+                <img src="../assets/images/icons/4792929.png" alt=""> 
+            </div>
+            <p id="nombre-usuario">nombre usuario</p> 
+        </div>
+        <div class="wrapper-2">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" value="correo@example.com" readonly>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" value="contraseña123" readonly>
+            <label for="new-password">Nueva contraseña:</label>
+            <input type="password" id="new-password" name="new-password">
+            <label for="confirm-new-password">Confirmar nueva contraseña:</label>
+            <input type="password" id="confirm-new-password" name="confirm-new-password">
+        </div>
+        <div class="wrapper-3">
+            <span>Método de Pago</span>
+            <label><input name="category" type="radio" value="Tarjeta de Crédito"> Tarjeta de Crédito</label>
+            <div class="card-number">
+                <label for="tarjeta">Número de tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta"  placeholder="XXXX XXXX XXXX XXXX">
+                <span id="tarjeta-error" style="color: red; display: none;">Numero de tarjeta invalido</span>
+                <input type="text" id="cvv" name="cvv"  placeholder="CVV">
+            </div>
+            <label><input name="category" type="radio" value="Cupón de Pago"> Cupón de Pago</label>
+            <label><input type="checkbox" id="pago-facil"> Pago fácil</label>
+            <label><input type="checkbox" id="rapi-pago"> RapiPago</label>
+            <label><input type="checkbox" id="otro"> Otro</label>
+            <label><input name="category" type="radio" value="Transferencia Bancaria"> Transferencia Bancaria</label>
+            <span>CBU: 9552670011100003274414</span>
+            <div class="botones-3">
+                <a href="../index.html" class="link-inicio-can">Cancelar Suscripción</a>
+                <a href="../index.html" class="link-inicio" id="confirmar-cambios">Confirmar Cambios</a>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/scriptPerfil.js"></script>
+</body>
+</html>
